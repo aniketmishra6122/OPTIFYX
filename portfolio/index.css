@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 94);
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 25px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: rgb(125, 125, 219);
+    font-size: 20px;
+}
+
+nav .left{
+    font-family: cursive;
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.firstSection > div{
+    width: 30%;
+}
+
+.leftSection{
+    
+    font-size: 3.5rem;
+    margin: 150px 0;
+    align-items: center;
+}
+#email{
+    margin-top: 20px;
+    font-size: medium;
+}
+#email p{
+    font-size: small;
+}
+#contact button{
+    border: 1px solid black;
+    border-radius: 20%;
+    margin-top: 20px;
+    background-color: rgb(71, 17, 122);
+    height: 50px;
+    width: 50px;
+}
+#contact img {
+    height: 20px;
+    width: 20px;
+}
+
+.rightSection img{
+    width: 120%;
+    margin: 70px 0;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.coloredName{
+    color: rgb(177, 109, 239);
+}
+
+#element{
+    font-family: cursive;
+    font-size: 2.8rem;
+    color: rgb(177, 109, 239);
+}
+
+
+
+h1{
+    margin-left: 100px;
+    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* #About{
+    margin-left: 5px;
+    border: 2px solid rgb(221, 206, 206);
+    height: 650px;
+    width: 1500px;
+    
+} */
+
+.secondSection{
+    display: flex;
+    justify-content:baseline;
+    margin-left: auto;
+}
+
+.secondSection > div{
+    width: 30%;
+}
+
+#AboutLeft img {
+    width: 130%; /* Adjust width to desired percentage */
+    max-width: 1000px; /* Set a maximum width for the image */
+    margin: 20px 0; /* Adjust margin as needed */
+    /* border: 1px solid black;
+    border-radius: 50%; Keeps the circular shape */
+    object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+#AboutRight{
+    height: 400px;
+    width: 800px;
+    border: 1px solid white;
+    border-radius: 10%
+    padding: 10px;
+    text-align:center;
+    /* font-family:cursive; */
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#Skills{
+   margin-left: 100ox;
+   margin-top: 50px;
+}
+
+
+.thirdSection{
+    background-color: rgb(0, 9, 46);
+    list-style: none;
+    text-transform: uppercase;
+    width: 800px;
+    margin: 60PX auto;
+    padding: 20PX;
+    box-shadow: 0 14px 28px rgb(0, 15, 62), 0 10px 10px rgb(0, 15, 62);
+}
+.thirdSection li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    
+    display: block;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(0, 15, 62), 0 1px 2px rgb(0, 15, 62);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgb(0, 15, 62), 0 10px 10px rgb(0, 15, 62);
+}
+.bar span {
+    
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(110, 110, 155),rgb(104, 104, 155)100%);
+}
+
+.html{
+    
+    width: 90%;
+    animation: html 3s;
+}
+/* .html .bar span{
+    margin-left: 90%;
+} */
+.small-image{
+    width: 30px;
+    height: 30px;
+    
+}
+.css{
+    width: 80%;
+    animation: html 3s;
+}
+.python {
+    width: 70%;
+    animation: python 3s;
+}
+.c{
+    width: 70%;
+    animation: html 3s;
+}
+
+.java{
+    width: 80%;
+    animation: java 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70;
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80;
+    }
+}
+
+.forthSection p{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: large;
+}
+.contact-form {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    max-width: 800px;
+    /* margin: auto; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    text-decoration: solid;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+h2{
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    margin: 5px;
+}
+#htmlimg img{
+    margin-left: 80% ;
+}
+#cssimg img{
+    margin-left: 73% ;
+}
+#pyimg img{
+    margin-left: 57% ;
+}
+#cimg img{
+    margin-left: 66% ;
+}
+#javaimg img{
+    margin-left: 72% ;
+}

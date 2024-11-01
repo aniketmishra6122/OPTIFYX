@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aniket Mishra</div>
+            <div class="right">
+               <ul>
+                <li><a href="">Home</a></li>
+                <li> <a href="#absec">About Me</a></li>
+                <li> <a href="#Skills">Skills</a></li>
+                <li> <a href="#abc">Contact Me</a></li>
+               </ul>
+            </div>
+
+        </nav>    
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I'm <span class="coloredName">Aniket</span>
+                and I am a <span id="element"></span>
+                <div>Web Developer.</div>
+                <div id="email">
+                    Email: <p>aniketmishra6122@gmail.com</p>
+                </div>  
+                  
+                <div id="contact">
+                    <button id="call">
+                        
+                        <a href="tel:+91 9555755164"><img src="call.png" alt=""></a>
+                    </button>
+                    <button id="lkd">
+                        
+                        <a href="https://www.linkedin.com/in/aniket-mishra-a5287928a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src="in.png.crdownload" alt=""></a>
+                    </button>
+                    <button id="mail">
+                        <a href="mailto:aniketmishra6122@gmail.com"><img src="mail.webp" alt=""></a>
+                        
+                    </button>
+                    
+                </div>
+                
+            </div>
+            
+           
+            <div class="rightSection">
+                <img src="bg.jpg" alt="">
+            </div>
+
+        </section>
+        <h1 id="absec">About Me</h1>
+        <section class="secondSection">
+            
+            
+                <div id="AboutLeft">
+                    <img src="th.webp" alt="">
+                 </div>
+                 <div id="AboutRight">
+                     
+                     <p>
+                        My name is Aniket Mishra I hails from kanpur. I'm persuing B.Tech from <b>Maharana Pratap Engineering College</b>  in <b>Computer Science</b> and Engineering. I have done my schooling from U.P Board. I am a Passionate web developer. My academic journey has equipped me with the essential skills and a strong passion for continuous learning in the ever-evolving feild of technology. I'm eager to apply my skills and expend my knowledge as I move forwerd in my career.
+                     </p>
+                 </div>
+            
+            
+        </section>
+
+        <h1 id="Skills">Skills</h1>
+        <section class="thirdSection">
+           <h2>My Skills</h2>
+            <h4>Here are some the skills I excel at:</h4>
+            
+            <li><h3 id="htmlimg">HTML  <img src="ht.png" alt="" class="small-image">                       
+                 
+            </h3>
+            
+                <span class="bar"><span class="html"></span></span>
+               
+            </li>
+            <li><h3 id="cssimg">CSS
+                <img src="css.png" alt="" class="small-image"> 
+            </h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3 id="pyimg">PYTHON
+                <img src="py.png" alt="" class="small-image"> 
+            </h3>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            <li><h3 id="cimg">C
+                <img src="c.png" alt="" class="small-image"> 
+            </h3>
+                <span class="bar"><span class="c"></span></span>
+            </li>
+            
+            <li><h3 id="javaimg">Java
+                <img src="java.png" alt="" class="small-image"> 
+            </h3>
+                <span class="bar"><span class="java"></span></span>
+            </li>
+            
+        </section>
+
+        <section class="forthSection">
+            <h1 id="abc">Contact</h1>
+            <p>Feel free to reach to me through this form:</p>
+            <form action="/submit" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Passionate', 'Skilled', 'Determined', 'Dedicated', 'Enthusiastic'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
